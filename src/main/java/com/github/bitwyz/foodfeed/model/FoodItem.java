@@ -4,11 +4,14 @@ import lombok.Builder;
 import lombok.NonNull;
 import lombok.Value;
 
+import javax.annotation.Nonnull;
+
 @Builder
 @Value
 public class FoodItem {
-    @NonNull private final String id;
-    @NonNull private final String name;
-    @NonNull private final float cost;
-    @NonNull private final String pageUrl;
+    @Nonnull private final String id;
+    @Nonnull private final String name;
+    @Nonnull private final Float cost;
+    @Nonnull private final String location;
+    @Nonnull private final String pageUrl;
 }
